@@ -80,6 +80,9 @@ header nav .menu .menu-item a.active::before {
   display: flex;
 }
 
+.img-right {
+  position: relative;
+}
 .img-right img {
   z-index: 1;
   position: relative;
@@ -92,8 +95,8 @@ header nav .menu .menu-item a.active::before {
   background: #0f2123;
   z-index: 1;
   position: absolute;
-  top: 14%;
-  right: 37%;
+  top: -20%;
+  right: 60%;
 }
 .img-right::after {
   display: block;
@@ -102,8 +105,8 @@ header nav .menu .menu-item a.active::before {
   height: 150px;
   background: #1d1524;
   position: absolute;
-  bottom: 179px;
-  right: 140px;
+  bottom: -15%;
+  right: -15%;
   transform: rotate(45deg);
 }
 
@@ -527,5 +530,4 @@ html {
 
 body {
   color: #fff;
-  padding-top: 78.917px;
 }/*# sourceMappingURL=style.css.map */

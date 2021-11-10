@@ -8,6 +8,7 @@
     }
 }
 .img-right {
+    position: relative;
     img {
         z-index: 1;
         position: relative;
@@ -21,8 +22,8 @@
         background: $bg-2;
         z-index: 1;
         position: absolute;
-        top: 14%;
-        right: 37%;
+        top: -20%;
+        right: 60%;
     }
     &::after {
         display: block;
@@ -31,8 +32,8 @@
         height: 150px;
         background: #1d1524;
         position: absolute;
-        bottom: 179px;
-        right: 140px;
+        bottom: -15%;
+        right: -15%;
         transform: rotate(45deg);
     }
 }
