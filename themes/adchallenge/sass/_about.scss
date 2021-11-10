@@ -1,0 +1,55 @@
+#block-about-me {
+    background-color: $bg-1;
+
+    #challenge-about-me {
+        padding: 250px 0;
+        @include site-container;
+        display: flex;
+    }
+}
+.img-right {
+    img {
+        z-index: 1;
+        position: relative;
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 330px;
+        height: 330px;
+        background: $bg-2;
+        z-index: 1;
+        position: absolute;
+        top: 14%;
+        right: 37%;
+    }
+    &::after {
+        display: block;
+        content: "";
+        width: 150px;
+        height: 150px;
+        background: #1d1524;
+        position: absolute;
+        bottom: 179px;
+        right: 140px;
+        transform: rotate(45deg);
+    }
+}
+
+.content-left {
+    z-index: 2;
+
+    div {
+        p {
+            @include block-p;
+            z-index: 2;
+        }
+    }
+    padding-right: 7rem;
+    h2 {
+        @include block-title;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+}

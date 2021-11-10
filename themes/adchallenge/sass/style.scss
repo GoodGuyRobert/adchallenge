@@ -1,0 +1,22 @@
+@import "config";
+@import "menu";
+@import "about";
+@import "home";
+@import "news";
+@import "event";
+@import "footer";
+@import "responsive";
+
+
+
+html
+{
+    scroll-margin-top: 120px;
+    font-size: 14px;
+    font-family: $font-family;
+}
+body
+{
+    color: $white;
+    padding-top: 78.917px;
+}

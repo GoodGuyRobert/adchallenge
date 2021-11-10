@@ -1,0 +1,65 @@
+$primary-color: #ff5252;
+$secondary-color: #0097a7;
+$white: #fff;
+$black: #000;
+$grey: #949494;
+$l-grey: #d4d4d4;
+$bg-1: #202020;
+$bg-2: #0f2123;
+$bg-3: #1e2c2e;
+$font-24: 24px;
+$font-14: 14px;
+$font-family: "Roboto";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+@mixin block-p {
+    line-height: 30px;
+    font-weight: 400;
+    color: #d4d4d4;
+}
+@mixin block-title {
+    margin: 0;
+
+    font-size: 36px;
+    font-weight: 300;
+    @include site-container;
+    text-transform: uppercase;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 100px;
+        height: 3px;
+        background: $secondary-color;
+        margin-top: 30px;
+    }
+}
+
+@mixin site-container {
+    width: 70%;
+    margin: 0 auto;
+}
+@mixin media-xs {
+    @media screen and (min-width: 300px) {
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

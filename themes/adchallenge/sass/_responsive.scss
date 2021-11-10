@@ -1,0 +1,188 @@
+@include media-xs {
+    #block-about-me #challenge-about-me {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        padding: 100px 0;
+        .content-left {
+            z-index: 2;
+            padding-right: 0;
+        }
+    }
+    .img-right img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    header {
+        .region-header {
+            width: 90%;
+            display: table;
+            text-align: center;
+            #block-adchallenge-branding {
+                float: unset;
+            }
+            .menu {
+                float: unset;
+                margin: 20px 0;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+    #block-top-content-header {
+        height: 70vh;
+    }
+    #block-adchallenge-content {
+        padding: 100px 0;
+        h2 {
+            width: 90%;
+        }
+    }
+    #challenge-home {
+        padding-top: 15vh !important;
+        h1 {
+            font-size: 55px !important;
+        }
+    }
+
+    #block-adchallenge-content {
+        .view-content {
+            grid-template-columns: repeat(1, 1fr);
+            width: 90%;
+        }
+    }
+    #block-latest-event {
+        #challenge-event {
+            width: 90%;
+            .content-right {
+                padding: 50px 0;
+            }
+            display: inherit;
+            .img-left {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    min-width: 343px;
+                }
+            }
+        }
+    }
+}
+@include media-md {
+    header {
+        .region-header {
+            width: 90%;
+            display: inherit;
+            text-align: unset;
+            #block-adchallenge-branding {
+                float: left;
+            }
+            .menu {
+                float: right;
+                margin: 20px 0;
+                text-align: center;
+                width: auto;
+            }
+        }
+    }
+
+    #block-about-me #challenge-about-me {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        padding: 100px 0;
+        .content-left {
+            z-index: 2;
+            padding-right: 0;
+        }
+    }
+    .img-right img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    #challenge-home {
+        padding-top: 35vh !important;
+
+        h1 {
+            font-size: 64px !important;
+        }
+    }
+
+    header .region-header {
+        width: 80%;
+    }
+
+    #block-latest-event {
+        #challenge-event {
+            width: 80%;
+
+            display: inherit;
+            .img-left {
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+    #block-top-content-header {
+        height: 100vh;
+    }
+
+    #block-adchallenge-content {
+        h2 {
+            width: 80%;
+        }
+        .view-content {
+            grid-template-columns: repeat(2, 1fr);
+            width: 80%;
+        }
+    }
+}
+
+@include media-lg {
+    #block-about-me #challenge-about-me {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding: 250px 0;
+        .content-left {
+            z-index: 2;
+            padding-right: 7rem;
+        }
+    }
+    .img-right img {
+        width: 500px;
+        height: 100%;
+    }
+    #block-adchallenge-content h2 {
+        width: 70%;
+    }
+    header .region-header {
+        width: 70%;
+    }
+    #block-latest-event {
+        #challenge-event {
+            .content-right {
+                padding: 0 0 0 4rem;
+            }
+            width: 70%;
+            display: flex;
+        }
+    }
+    #block-adchallenge-content {
+        padding: 100px 0;
+    }
+    #block-adchallenge-content {
+        .view-content {
+            grid-template-columns: repeat(3, 1fr);
+            width: 70%;
+        }
+    }
+}
+
+@include media-xl {
+}

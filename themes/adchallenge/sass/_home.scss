@@ -1,0 +1,49 @@
+#block-top-content-header {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    #challenge-home {
+        text-align: center;
+        padding-top: 25vh;
+
+        h2 {
+            font-size: $font-24;
+            color: #fff;
+            font-weight: 300;
+            border-bottom: 1px solid $white;
+            width: 247px;
+            margin: 0 auto;
+            padding: 42px 0;
+        }
+    }
+
+    div {
+        h1 {
+            font-weight: 200;
+            font-size: 64px;
+            color: $white;
+        }
+    }
+    .field--name-field-link {
+        @include transition-ease;
+        background: $primary-color;
+        border-radius: 5px;
+        width: 180px;
+        padding: 20px;
+        border: 1px solid $primary-color;
+        margin: 0 auto;
+        cursor: pointer;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+        &:hover {
+            @include transition-ease;
+            background: black;
+            border: $white solid 1px;
+        }
+    }
+}

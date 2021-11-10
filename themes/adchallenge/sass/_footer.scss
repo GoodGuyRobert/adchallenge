@@ -1,0 +1,40 @@
+footer {
+    .region-footer {
+        background-color: $bg-2;
+        text-align: center;
+
+        .menu {
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+
+            .menu-item {
+                display: inline-block;
+                padding: 0 10px;
+                a {
+                    color: $grey;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        #block-footercreated {
+            padding: 1px;
+            background-color: $bg-3;
+
+            p {
+                color: $l-grey;
+                a {
+                    color: $l-grey;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
