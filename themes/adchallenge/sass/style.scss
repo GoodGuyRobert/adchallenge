@@ -1,11 +1,11 @@
 @import "config";
+
 @import "menu";
 @import "about";
 @import "home";
 @import "news";
 @import "event";
 @import "footer";
-@import "responsive";
 
 
 
@@ -20,3 +20,5 @@ body
     color: $white;
    
 }
+
+@import "responsive";

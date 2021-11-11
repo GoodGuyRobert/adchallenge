@@ -1,5 +1,5 @@
 header {
-    padding: 1rem;
+   
     position: fixed;
     left: 0;
     width: 100vw;
@@ -9,26 +9,28 @@ header {
     z-index: 2;
 
     .region-header {
-        width: 70%;
-        margin: 0 auto;
+      
         display: block;
         transform: translateY(0);
-        height: 100%;
         background: transparent;
         text-align: right;
         overflow: hidden;
         list-style-type: none;
-        padding-right: 1rem;
         @include transition-ease;
         z-index: 1;
         visibility: visible;
+        height: 99px;
+display: flex;
+align-items: center;
+padding: 0 194px 0 195px;
     }
     #block-adchallenge-branding {
-        display: inline-flex;
-        float: left;
+        display: flex;
+        align-items: center;
+       
 
         .site-slogan {
-            margin: auto 20px;
+            margin-left: 31px;
             font-size: $font-24;
             color: white;
         }
@@ -38,15 +40,19 @@ header {
 
         .menu {
             float: right;
-            margin: 20px 0;
+          
+            width: 295px;
+
+display: flex;
+justify-content: space-between;
 
             .menu-item {
                 display: inline-block;
-                padding-bottom: 10px;
+               
 
                 a {
                     font-weight: 500;
-                    margin-right: 42px;
+                   
                     text-decoration: none;
                     color: $white;
 
@@ -61,11 +67,11 @@ header {
                         opacity: 0;
                     }
                     &:hover::before {
-                        bottom: 25px;
+                        bottom: 32px;
                         opacity: 1;
                     }
                     &.active::before {
-                        bottom: 25px;
+                        bottom: 32px;
                         opacity: 1;
                     }
                 }

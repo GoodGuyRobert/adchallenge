@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 header {
-  padding: 1rem;
   position: fixed;
   left: 0;
   width: 100vw;
@@ -11,26 +10,26 @@ header {
   z-index: 2;
 }
 header .region-header {
-  width: 70%;
-  margin: 0 auto;
   display: block;
   transform: translateY(0);
-  height: 100%;
   background: transparent;
   text-align: right;
   overflow: hidden;
   list-style-type: none;
-  padding-right: 1rem;
   transition: all 0.5s ease-in-out;
   z-index: 1;
   visibility: visible;
+  height: 99px;
+  display: flex;
+  align-items: center;
+  padding: 0 194px 0 195px;
 }
 header #block-adchallenge-branding {
-  display: inline-flex;
-  float: left;
+  display: flex;
+  align-items: center;
 }
 header #block-adchallenge-branding .site-slogan {
-  margin: auto 20px;
+  margin-left: 31px;
   font-size: 24px;
   color: white;
 }
@@ -39,15 +38,15 @@ header nav {
 }
 header nav .menu {
   float: right;
-  margin: 20px 0;
+  width: 295px;
+  display: flex;
+  justify-content: space-between;
 }
 header nav .menu .menu-item {
   display: inline-block;
-  padding-bottom: 10px;
 }
 header nav .menu .menu-item a {
   font-weight: 500;
-  margin-right: 42px;
   text-decoration: none;
   color: #fff;
 }
@@ -62,21 +61,19 @@ header nav .menu .menu-item a::before {
   opacity: 0;
 }
 header nav .menu .menu-item a:hover::before {
-  bottom: 25px;
+  bottom: 32px;
   opacity: 1;
 }
 header nav .menu .menu-item a.active::before {
-  bottom: 25px;
+  bottom: 32px;
   opacity: 1;
 }
 
 #block-about-me {
-  background-color: #202020;
+  background-color: #101010;
 }
 #block-about-me #challenge-about-me {
-  padding: 250px 0;
-  width: 70%;
-  margin: 0 auto;
+  padding: 245px 195px 180px;
   display: flex;
 }
 
@@ -95,8 +92,8 @@ header nav .menu .menu-item a.active::before {
   background: #0f2123;
   z-index: 1;
   position: absolute;
-  top: -20%;
-  right: 60%;
+  bottom: 276px;
+  right: 360px;
 }
 .img-right::after {
   display: block;
@@ -105,14 +102,14 @@ header nav .menu .menu-item a.active::before {
   height: 150px;
   background: #1d1524;
   position: absolute;
-  bottom: -15%;
-  right: -15%;
+  left: 450px;
+  top: 405px;
   transform: rotate(45deg);
 }
 
 .content-left {
   z-index: 2;
-  padding-right: 7rem;
+  padding-right: 105px;
 }
 .content-left div p {
   line-height: 30px;
@@ -124,10 +121,7 @@ header nav .menu .menu-item a.active::before {
   margin: 0;
   font-size: 36px;
   font-weight: 300;
-  width: 70%;
-  margin: 0 auto;
   text-transform: uppercase;
-  padding-bottom: 30px;
   margin: 0;
 }
 .content-left h2::after {
@@ -136,63 +130,74 @@ header nav .menu .menu-item a.active::before {
   width: 100px;
   height: 3px;
   background: #0097a7;
-  margin-top: 30px;
+  margin: 24px 0 41px 0;
 }
 
 #block-top-content-header {
-  height: 100vh;
+  height: 724px;
   background-position: center;
   background-size: cover;
 }
 #block-top-content-header #challenge-home {
-  text-align: center;
-  padding-top: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 350px;
+  flex-direction: column;
+  top: -100px;
+  position: relative;
 }
 #block-top-content-header #challenge-home h2 {
   font-size: 24px;
   color: #fff;
   font-weight: 300;
   border-bottom: 1px solid #fff;
-  width: 247px;
-  margin: 0 auto;
-  padding: 42px 0;
+  width: 249px;
+  margin: 0;
+  padding-bottom: 32px;
 }
-#block-top-content-header div h1 {
+#block-top-content-header .field h1 {
   font-weight: 200;
   font-size: 64px;
   color: #fff;
-}
-#block-top-content-header .field--name-field-link {
-  transition: all 0.5s ease-in-out;
-  background: #ff5252;
-  border-radius: 5px;
-  width: 180px;
-  padding: 20px;
-  border: 1px solid #ff5252;
-  margin: 0 auto;
-  cursor: pointer;
+  line-height: 75px;
+  margin: 22px 0 52px 0;
 }
 #block-top-content-header .field--name-field-link a {
   color: #fff;
   text-decoration: none;
+  width: 100%;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  background: #ff5252;
+  border-radius: 5px;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #ff5252;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#block-top-content-header .field--name-field-link:hover {
+#block-top-content-header .field--name-field-link a:hover {
   transition: all 0.5s ease-in-out;
   background: black;
   border: #fff solid 1px;
 }
 
 #block-adchallenge-content {
-  padding: 180px 0;
-  background-color: #202020;
+  padding: 123px 195px 102px 195px;
+  background-color: #101010;
 }
 #block-adchallenge-content h2 {
   margin: 0;
   font-size: 36px;
   font-weight: 300;
-  width: 70%;
-  margin: 0 auto;
   text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 42px;
 }
 #block-adchallenge-content h2::after {
   display: block;
@@ -200,16 +205,18 @@ header nav .menu .menu-item a.active::before {
   width: 100px;
   height: 3px;
   background: #0097a7;
-  margin-top: 30px;
+  margin: 24px 0 41px 0;
+}
+#block-adchallenge-content h2::after {
+  margin: 24px 0 62px 0;
 }
 #block-adchallenge-content .view-content {
-  width: 70%;
-  margin: 0 auto;
-  margin: 4rem auto 0 auto;
   display: grid;
-  grid-template-columns: 3;
-  grid-gap: 4rem;
+  grid-gap: 60px;
   grid-template-columns: repeat(3, 1fr);
+}
+#block-adchallenge-content .view-content .views-row {
+  width: 100%;
 }
 #block-adchallenge-content .view-content article h2 {
   padding: 0;
@@ -217,48 +224,54 @@ header nav .menu .menu-item a.active::before {
   font-weight: 500;
   font-size: 24px;
   text-transform: unset;
-}
-#block-adchallenge-content .view-content article h2 a {
-  text-decoration: none;
-  color: #fff;
+  line-height: 28.13px;
 }
 #block-adchallenge-content .view-content article h2::after {
   display: none;
 }
-#block-adchallenge-content .view-content article .node__content .createdDate {
+#block-adchallenge-content .view-content article a {
+  text-decoration: none;
+  color: #fff;
+}
+#block-adchallenge-content .view-content article::after {
+  display: none;
+}
+#block-adchallenge-content .view-content .node__content .createdDate {
   padding: 5px 0 20px 0;
   color: #949494;
   font-size: 12px;
   font-weight: 300;
+  line-height: 14px;
 }
-#block-adchallenge-content .view-content article .node__content .quickedit-field {
+#block-adchallenge-content .view-content .node__content .field p {
   line-height: 30px;
   font-weight: 400;
   color: #d4d4d4;
+  margin: 18.46px 0 45.85px 0;
 }
-#block-adchallenge-content .view-content article .node__content .node__links ul li {
+#block-adchallenge-content .view-content .node__content .node__links ul li {
   padding: 0;
 }
-#block-adchallenge-content .view-content article .node__content .node__links ul li a {
+#block-adchallenge-content .view-content .node__content .node__links ul li a {
   font-size: 14px;
   margin: 0;
   cursor: pointer;
-  line-height: 31px;
+  line-height: 16.41px;
   text-decoration: none;
 }
-#block-adchallenge-content .view-content article .node__content .node__links ul li a::after {
+#block-adchallenge-content .view-content .node__content .node__links ul li a::after {
   display: inline-block;
   padding-left: 8px;
   content: " ❯";
   transition: all 0.5s ease-in-out;
   color: #0097a7;
 }
-#block-adchallenge-content .view-content article .node__content .node__links ul li a:hover::after {
+#block-adchallenge-content .view-content .node__content .node__links ul li a:hover::after {
   transform: translateX(4px);
   color: #ff5252;
   transition: all 0.5s ease-in-out;
 }
-#block-adchallenge-content .view-content img {
+#block-adchallenge-content img {
   width: 100%;
   height: 100%;
 }
@@ -268,37 +281,41 @@ header nav .menu .menu-item a.active::before {
 }
 #block-latest-event #challenge-event {
   position: relative;
-  width: 70%;
-  margin: 0 auto;
-  padding: 100px 0;
+  padding: 120px 195px 120px 194px;
   display: flex;
   align-items: center;
 }
 #block-latest-event #challenge-event .img-left {
+  width: 420px;
+  height: 300px;
+}
+#block-latest-event #challenge-event .img-left .field {
   width: 100%;
   height: 100%;
 }
 #block-latest-event #challenge-event .img-left img {
-  width: 500px;
-  height: 333.33px;
+  width: 420px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 #block-latest-event #challenge-event .content-right {
-  padding-left: 4rem;
+  padding-left: 60px;
 }
 #block-latest-event #challenge-event .content-right div p {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: #d4d4d4;
+  margin: 0;
 }
 #block-latest-event #challenge-event .content-right h2 {
   margin: 0;
   font-size: 36px;
   font-weight: 300;
-  width: 70%;
-  margin: 0 auto;
   text-transform: uppercase;
-  padding-bottom: 30px;
   margin: 0;
 }
 #block-latest-event #challenge-event .content-right h2::after {
@@ -307,17 +324,19 @@ header nav .menu .menu-item a.active::before {
   width: 100px;
   height: 3px;
   background: #0097a7;
-  margin-top: 30px;
+  margin: 24px 0 41px 0;
 }
 
 footer .region-footer {
   background-color: #0f2123;
-  text-align: center;
 }
 footer .region-footer .menu {
-  text-align: center;
   margin: 0;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
 }
 footer .region-footer .menu .menu-item {
   display: inline-block;
@@ -335,7 +354,13 @@ footer .region-footer #block-footercreated {
   background-color: #1e2c2e;
 }
 footer .region-footer #block-footercreated p {
+  font-size: 12px;
   color: #d4d4d4;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .region-footer #block-footercreated p a {
   color: #d4d4d4;
@@ -344,184 +369,6 @@ footer .region-footer #block-footercreated p a:hover {
   color: #fff;
 }
 
-@media screen and (min-width: 300px) {
-  #block-about-me #challenge-about-me {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    padding: 100px 0;
-  }
-  #block-about-me #challenge-about-me .content-left {
-    z-index: 2;
-    padding-right: 0;
-  }
-
-  .img-right img {
-    width: 100%;
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
-  header .region-header {
-    width: 90%;
-    display: table;
-    text-align: center;
-  }
-  header .region-header #block-adchallenge-branding {
-    float: unset;
-  }
-  header .region-header .menu {
-    float: unset;
-    margin: 20px 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  #block-top-content-header {
-    height: 70vh;
-  }
-
-  #block-adchallenge-content {
-    padding: 100px 0;
-  }
-  #block-adchallenge-content h2 {
-    width: 90%;
-  }
-
-  #challenge-home {
-    padding-top: 15vh !important;
-  }
-  #challenge-home h1 {
-    font-size: 55px !important;
-  }
-
-  #block-adchallenge-content .view-content {
-    grid-template-columns: repeat(1, 1fr);
-    width: 90%;
-  }
-
-  #block-latest-event #challenge-event {
-    width: 90%;
-    display: inherit;
-  }
-  #block-latest-event #challenge-event .content-right {
-    padding: 50px 0;
-  }
-  #block-latest-event #challenge-event .img-left img {
-    width: 100%;
-    height: 100%;
-    min-width: 343px;
-  }
-}
-@media screen and (min-width: 768px) {
-  header .region-header {
-    width: 90%;
-    display: inherit;
-    text-align: unset;
-  }
-  header .region-header #block-adchallenge-branding {
-    float: left;
-  }
-  header .region-header .menu {
-    float: right;
-    margin: 20px 0;
-    text-align: center;
-    width: auto;
-  }
-
-  #block-about-me #challenge-about-me {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    padding: 100px 0;
-  }
-  #block-about-me #challenge-about-me .content-left {
-    z-index: 2;
-    padding-right: 0;
-  }
-
-  .img-right img {
-    width: 100%;
-    height: 350px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
-  #challenge-home {
-    padding-top: 35vh !important;
-  }
-  #challenge-home h1 {
-    font-size: 64px !important;
-  }
-
-  header .region-header {
-    width: 80%;
-  }
-
-  #block-latest-event #challenge-event {
-    width: 80%;
-    display: inherit;
-  }
-  #block-latest-event #challenge-event .img-left img {
-    width: inherit;
-    height: inherit;
-  }
-
-  #block-top-content-header {
-    height: 100vh;
-  }
-
-  #block-adchallenge-content h2 {
-    width: 80%;
-  }
-  #block-adchallenge-content .view-content {
-    grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #block-about-me #challenge-about-me {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    padding: 250px 0;
-  }
-  #block-about-me #challenge-about-me .content-left {
-    z-index: 2;
-    padding-right: 7rem;
-  }
-
-  .img-right img {
-    width: 500px;
-    height: 100%;
-  }
-
-  #block-adchallenge-content h2 {
-    width: 70%;
-  }
-
-  header .region-header {
-    width: 70%;
-  }
-
-  #block-latest-event #challenge-event {
-    width: 70%;
-    display: flex;
-  }
-  #block-latest-event #challenge-event .content-right {
-    padding: 0 0 0 4rem;
-  }
-
-  #block-adchallenge-content {
-    padding: 100px 0;
-  }
-
-  #block-adchallenge-content .view-content {
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
-  }
-}
 html {
   scroll-margin-top: 120px;
   font-size: 14px;
@@ -530,4 +377,103 @@ html {
 
 body {
   color: #fff;
+}
+
+@media screen and (max-width: 300px) {
+  #block-adchallenge-content {
+    padding: 41px 10px 34px 10px;
+  }
+  #block-adchallenge-content .view-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media all and (min-width: 300px) and (max-width: 800px) {
+  .img-right {
+    position: relative;
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header #block-adchallenge-branding {
+    justify-content: center;
+  }
+  header nav .menu .menu-item a:hover::before {
+    bottom: 9px;
+  }
+  header nav .menu .menu-item a.active::before {
+    bottom: 9px;
+  }
+  header .region-header {
+    display: inline-table;
+    padding: 0 50px 0 50px !important;
+  }
+
+  #block-adchallenge-content {
+    padding: 123px 50px 102px 50px !important;
+  }
+  #block-adchallenge-content .view-content {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  #challenge-event {
+    display: block !important;
+    padding: 123px 50px 102px 50px !important;
+  }
+  #challenge-event .img-left {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #challenge-event .img-left img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #challenge-event .content-right {
+    padding: 30px 0 0 0 !important;
+  }
+
+  #block-about-me #challenge-about-me {
+    padding: 245px 50px 180px 50px !important;
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .region-header {
+    padding: 0 100px 0 100px;
+  }
+
+  #block-adchallenge-content {
+    padding: 123px 100px 102px 100px;
+  }
+  #block-adchallenge-content .view-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #block-latest-event #challenge-event {
+    position: relative;
+    padding: 123px 100px 102px 100px;
+    /* display: flex; */
+    align-items: center;
+  }
+
+  #block-about-me #challenge-about-me {
+    padding: 245px 100px 180px 100px;
+    display: block;
+  }
+  #block-about-me #challenge-about-me .content-left {
+    padding-right: 0;
+    position: relative;
+  }
+  #block-about-me #challenge-about-me img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #block-adchallenge-content .view-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

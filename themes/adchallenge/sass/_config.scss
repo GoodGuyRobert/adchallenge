@@ -4,7 +4,7 @@ $white: #fff;
 $black: #000;
 $grey: #949494;
 $l-grey: #d4d4d4;
-$bg-1: #202020;
+$bg-1: #101010;
 $bg-2: #0f2123;
 $bg-3: #1e2c2e;
 $font-24: 24px;
@@ -13,6 +13,13 @@ $font-family: "Roboto";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+
+@mixin flex-content
+{
+    display: flex;
+                align-items: center;
+                justify-content: center;
+}
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }
@@ -26,7 +33,7 @@ $font-family: "Roboto";
 
     font-size: 36px;
     font-weight: 300;
-    @include site-container;
+    
     text-transform: uppercase;
 
     &::after {
@@ -35,31 +42,31 @@ $font-family: "Roboto";
         width: 100px;
         height: 3px;
         background: $secondary-color;
-        margin-top: 30px;
+        margin: 24px 0 41px 0;
+
     }
 }
 
 @mixin site-container {
-    width: 70%;
-    margin: 0 auto;
-}
-@mixin media-xs {
-    @media screen and (min-width: 300px) {
+   
+}@mixin media-xs {
+    @media screen and (max-width: 300px) {
         @content;
     }
 }
+
 @mixin media-md {
-    @media screen and (min-width: 768px) {
+    @media all and (min-width: 300px) and (max-width: 800px) {
         @content;
     }
 }
 @mixin media-lg {
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }
 @mixin media-xl {
-    @media screen and (min-width: 1600px) {
+    @media screen and (max-width: 1200px) {
         @content;
     }
 }

@@ -2,33 +2,42 @@
     background-color: #161e21;
     #challenge-event {
         position: relative;
-        @include site-container;
-        padding: 100px 0;
+
+        padding: 120px 195px 120px 194px;
         display: flex;
         align-items: center;
 
         .img-left {
-            width: 100%;
-            height: 100%;
+            width: 420px;
+            height: 300px;
+        
 
+            .field {
+                width: 100%;
+                height: 100%;
+            }
             img {
-                width: 500px;
-                height: 333.33px;
+                width: 420px;
+                height: 300px;
+                object-fit: cover;
+object-position: right;
             }
         }
         .content-right {
-            padding-left: 4rem;
+            padding-left: 60px;
             div {
                 p {
                     font-size: 14px;
                     line-height: 30px;
                     font-weight: 400;
                     color: $l-grey;
+                    margin: 0;
                 }
             }
             h2 {
                 @include block-title;
-                padding-bottom: 30px;
+
+              
                 margin: 0;
             }
         }
